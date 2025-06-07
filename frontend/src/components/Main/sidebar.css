@@ -1,0 +1,131 @@
+.sidebar {
+    display: flex;
+    padding: 20px 0px 10px 10px;
+    height: 100%;
+    flex: 0.5;
+    max-width: 200px;
+    border-right: 1px solid #7c6651;
+    background-color: #f3e9dd; /* soft brown */
+    position: relative;
+    box-shadow: inset -2px 0 6px rgba(75, 54, 33, 0.25);
+}
+
+@keyframes fadeInOut {
+    0% { opacity: 0.4; }
+    50% { opacity: 1; }
+    100% { opacity: 0.4; }
+}
+
+.sidebar-container {
+    margin: 10px 0;
+    display: flex;
+    width: 100%;
+}
+
+.sidebar-options {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.sidebar-option {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+.sidebar-option-name {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 10px 0;
+    font-size: 14px;
+    padding-left: 6px;
+    transition: background 0.2s ease;
+}
+
+.sidebar-option-name > .MuiSvgIcon-root {
+    font-size: 18px;
+    margin-right: 5px;
+    color: #a66a2f;
+    animation: fadeInOut 1.8s infinite;
+}
+
+.sidebar-option-name > p {
+    color: #4b3621;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+a {
+    text-decoration: none;
+    color: #7c6651;
+    transition: color 0.2s ease-in-out;
+}
+
+a:hover {
+    color: #a66a2f;
+}
+
+.sidebar-option > p {
+    color: #7c6651;
+    font-size: 14px;
+}
+
+.link {
+    display: flex;
+    flex-direction: column;
+}
+
+.link-tag {
+    display: flex;
+    align-items: center;
+    padding: 6px 10px;
+    width: 100%;
+    border-left: 3px solid transparent;
+    transition: all 0.3s ease-in-out;
+    border-radius: 4px;
+    background-color: transparent;
+}
+
+.link-tag:hover {
+    background-color: #fbe3cf;
+    border-left: 3px solid #a66a2f;
+}
+
+.link-tag > .MuiSvgIcon-root {
+    font-size: 18px;
+    margin-right: 6px;
+    color: #a66a2f;
+    animation: fadeInOut 2s infinite;
+}
+
+.tags {
+    display: flex;
+    flex-direction: column;
+    color: #7c6651;
+    margin: 0px 20px;
+}
+
+.tags > p {
+    margin: 5px 0;
+    transition: color 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.tags > p:hover {
+    color: #a66a2f;
+}
+
+@keyframes glow {
+    0% { box-shadow: 0 0 2px rgba(166, 106, 47, 0.3); }
+    50% { box-shadow: 0 0 6px rgba(166, 106, 47, 0.6); }
+    100% { box-shadow: 0 0 2px rgba(166, 106, 47, 0.3); }
+}
+
+.link-tag:hover,
+.sidebar-option-name:hover {
+    animation: glow 1.5s infinite;
+}

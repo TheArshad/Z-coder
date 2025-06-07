@@ -1,0 +1,154 @@
+/* Full-page background with subtle gradient */
+.auth {
+  height: 100vh;
+  background: linear-gradient(135deg, #1a1a1a, #0f0f0f);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #fff;
+  padding: 20px;
+}
+
+/* Glassmorphic container */
+.glassmorphic-container {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 40px 50px;
+  width: 350px;
+  max-width: 100%;
+  box-shadow:
+    0 8px 32px 0 rgba(31, 38, 135, 0.37),
+    inset 0 0 2000px rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  text-align: center;
+}
+
+.logo {
+  width: 140px;
+  margin-bottom: 20px;
+}
+
+.tagline {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: #cfcfcf;
+}
+
+/* Google Sign-in button */
+.sign-options {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.single-option {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.15);
+  padding: 12px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 600;
+  color: #fff;
+  user-select: none;
+}
+
+.single-option:hover {
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
+}
+
+.google-icon {
+  margin-right: 10px;
+  font-size: 24px !important;
+  color: #db4437;
+}
+
+/* Form styling */
+.auth-form {
+  margin-top: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  text-align: left;
+}
+
+.input-field label {
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #eee;
+}
+
+.input-field input {
+  width: 100%;
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+}
+
+.input-field input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.input-field input:focus {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* Submit button */
+.submit-btn {
+  margin-top: 15px;
+  background: rgba(255, 255, 255, 0.25);
+  border: none;
+  padding: 12px;
+  border-radius: 12px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  user-select: none;
+}
+
+.submit-btn:hover:not(:disabled) {
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
+}
+
+.submit-btn:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+/* Toggle link */
+.toggle-register {
+  margin-top: 20px;
+  text-align: center;
+  color: #8ab4f8;
+  cursor: pointer;
+  font-weight: 600;
+  user-select: none;
+  text-decoration: underline;
+}
+
+.toggle-register:hover {
+  color: #a0c4ff;
+}
+
+/* Error message */
+.error-msg {
+  margin-top: 12px;
+  color: #ff6b6b;
+  font-weight: 700;
+  text-align: center;
+  font-size: 0.9rem;
+}

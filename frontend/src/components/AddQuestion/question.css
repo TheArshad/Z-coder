@@ -1,0 +1,139 @@
+/* ===== MODERN DARK THEME ===== */
+.add-question {
+  display: flex;
+  justify-content: center;
+  background-color: #1a1a1a;
+  min-height: 100vh;
+  padding: 2rem 0;
+}
+
+.add-question-container {
+  width: 90%;
+  max-width: 800px;
+  background: #252525;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  border: 1px solid #3a3a3a;
+}
+
+.head-title h1 {
+  color: #fff;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+/* ===== FORM CONTAINER ===== */
+.question-container {
+  background: #2d2d2d;
+  border-radius: 10px;
+  padding: 1.5rem;
+  border: 1px solid #404040;
+}
+
+/* ===== INPUT FIELDS ===== */
+.title {
+  margin-bottom: 1.5rem;
+}
+
+.title h3 {
+  color: #e0e0e0;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.title small {
+  color: #a0a0a0;
+  font-size: 0.85rem;
+  margin-bottom: 0.8rem;
+  display: block;
+}
+
+.title input {
+  width: 100%;
+  padding: 12px;
+  background: #333;
+  border: 1px solid #444;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 1rem;
+  transition: border 0.3s;
+}
+
+.title input:focus {
+  border-color: #646cff;
+  outline: none;
+}
+
+/* ===== RICH TEXT EDITOR ===== */
+.react-quill {
+  background: #333;
+  border-radius: 6px;
+  border: 1px solid #444;
+  color: #fff;
+}
+
+.react-quill .ql-toolbar {
+  background: #2a2a2a;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border-bottom: 1px solid #444;
+}
+
+.react-quill .ql-container {
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  min-height: 200px;
+}
+
+/* ===== TAGS INPUT ===== */
+.tags-input {
+  background: #333 !important;
+  border-radius: 6px !important;
+  padding: 8px !important;
+  border: 1px solid #444 !important;
+}
+
+.tags-input input {
+  color: #fff !important;
+}
+
+/* ===== SUBMIT BUTTON ===== */
+.ask-button {
+  background: #646cff;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-weight: 500;
+  margin-top: 1rem;
+  cursor: pointer;
+  transition: all 0.3s;
+  width: 100%;
+  max-width: 200px;
+}
+
+.ask-button:hover {
+  background: #535bf2;
+  transform: translateY(-2px);
+}
+
+.ask-button:disabled {
+  background: #4a4a4a;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* ===== RESPONSIVE TWEAKS ===== */
+@media (max-width: 768px) {
+  .add-question-container {
+    padding: 1.5rem;
+    width: 95%;
+  }
+  
+  .ask-button {
+    max-width: 100%;
+  }
+}
